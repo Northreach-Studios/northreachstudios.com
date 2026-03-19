@@ -3,69 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Northreach Studios is an independent game development studio building imaginative interactive worlds."
+    >
     <title>Northreach Studios</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e5e7eb;
-            text-align: center;
-        }
-        header {
-            padding: 40px 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        p {
-            max-width: 600px;
-            margin: 20px auto;
-            color: #9ca3af;
-        }
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 20px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-        .section {
-            padding: 40px 20px;
-        }
-        footer {
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #6b7280;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="site-shell">
+        <header class="topbar">
+            <a class="brand" href="#home" aria-label="Northreach Studios home">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-text">
+                    <strong>Northreach</strong>
+                    <span>Studios</span>
+                </span>
+            </a>
 
-<header>
-    <h1>Northreach Studios</h1>
-    <p>Community-first mobile strategy games built for long-term play.</p>
-    <a class="btn" href="#games">View Game</a>
-    <a class="btn" href="#community">Community</a>
-</header>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
 
-<div class="section" id="games">
-    <h2>Current Project</h2>
-    <p>A persistent mobile strategy game focused on fairness, scalability, and PvE-first gameplay.</p>
-</div>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#approach">Approach</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-<div class="section" id="community">
-    <h2>Community</h2>
-    <p>Join discussions, suggest features, and help shape development.</p>
-    <a class="btn" href="https://github.com/NorthreachStudios">Visit GitHub</a>
-</div>
+        <main id="home">
+            <section class="hero reveal">
+                <div class="hero-copy">
+                    <p class="eyebrow">Explore. Create. Ascend.</p>
+                    <h1>Original worlds, sharp systems, and games built to last.</h1>
+                    <p class="hero-text">
+                        Northreach Studios is a new independent game development studio crafting bold,
+                        memorable experiences across genres. We care about strong identity, satisfying
+                        design, and the kind of polish that keeps players leaning forward.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#contact">Get In Touch</a>
+                        <a class="button button-secondary" href="#about">Learn More</a>
+                    </div>
+                </div>
 
-<footer>
-    <p>© Northreach Studios</p>
-</footer>
+                <div class="hero-card reveal">
+                    <div class="compass">
+                        <div class="compass-ring compass-ring-outer"></div>
+                        <div class="compass-ring compass-ring-inner"></div>
+                        <div class="compass-spire"></div>
+                    </div>
+                    <p class="card-label">Studio Direction</p>
+                    <h2>Creative ambition grounded by thoughtful execution.</h2>
+                    <p>
+                        From early concepts to launch-ready experiences, we are building a studio identity
+                        around clarity, quality, and momentum.
+                    </p>
+                </div>
+            </section>
 
+            <section class="highlights reveal" id="about">
+                <article class="panel">
+                    <p class="panel-kicker">What We Build</p>
+                    <h2>Games with a clear point of view.</h2>
+                    <p>
+                        We are not tied to a single genre. That flexibility lets us chase the best idea,
+                        shape the right experience for it, and keep the studio creatively alive.
+                    </p>
+                </article>
+
+                <div class="feature-grid">
+                    <article class="feature-card reveal">
+                        <h3>Distinctive Worlds</h3>
+                        <p>Settings and themes designed to feel intentional, atmospheric, and worth revisiting.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3>Player-First Design</h3>
+                        <p>Mechanics that respect players' time while still delivering challenge, discovery, and depth.</p>
+                    </article>
+                    <article class="feature-card reveal">
+                        <h3>Studio Agility</h3>
+                        <p>A small, focused team that can experiment freely and adapt fast without losing quality.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="approach reveal" id="approach">
+                <div class="section-heading">
+                    <p class="eyebrow">How We Work</p>
+                    <h2>Built for strong first impressions and long-term growth.</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-item reveal">
+                        <span class="timeline-index">01</span>
+                        <h3>Concept with intent</h3>
+                        <p>We start with a strong creative core instead of chasing trends for their own sake.</p>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span class="timeline-index">02</span>
+                        <h3>Prototype the feel</h3>
+                        <p>We test for mood, responsiveness, and identity early so the direction stays sharp.</p>
+                    </article>
+                    <article class="timeline-item reveal">
+                        <span class="timeline-index">03</span>
+                        <h3>Refine the experience</h3>
+                        <p>We iterate toward something cohesive, stable, and memorable on both desktop and mobile screens.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contact reveal" id="contact">
+                <div class="contact-copy">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let's start the conversation.</h2>
+                    <p>
+                        For support, business inquiries, or early interest in what Northreach Studios is building,
+                        reach us directly at <a href="mailto:support@northreachstudios.com">support@northreachstudios.com</a>.
+                    </p>
+                </div>
+                <div class="contact-actions">
+                    <a class="button button-primary" href="mailto:support@northreachstudios.com">Email Support</a>
+                    <a class="button button-secondary" href="https://github.com/NorthreachStudios">Visit GitHub</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> Northreach Studios. Independent game development with a clear north star.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
