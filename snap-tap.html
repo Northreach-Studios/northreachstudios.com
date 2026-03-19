@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Snap Tap is a mobile reflex game in active development at Northreach Studios."
+    >
+    <title>Snap Tap | Northreach Studios</title>
+    <link rel="icon" type="image/png" href="Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="topbar">
+            <a class="brand" href="index.html#home" aria-label="Northreach Studios home">
+                <span class="brand-mark" aria-hidden="true"></span>
+                <span class="brand-text">
+                    <strong>Northreach</strong>
+                    <span>Studios</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+                <a href="games.html">Games</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#approach">Approach</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="page-hero project-hero reveal">
+                <div class="page-hero-copy">
+                    <p class="eyebrow">Northreach Studios</p>
+                    <h1>Snap Tap</h1>
+                    <p class="page-intro">
+                        Snap Tap is a fast, replayable reflex game built for quick sessions on mobile,
+                        with a clear arcade-style loop focused on reaction speed, precision, and repeat play.
+                    </p>
+                    <div class="hero-actions">
+                        <span class="status-pill">In Development</span>
+                        <a class="button button-secondary" href="games.html">Back to Games</a>
+                    </div>
+                </div>
+
+                <aside class="page-hero-panel reveal">
+                    <p class="card-label">Project Status</p>
+                    <h2>Core gameplay is being stabilised and polished.</h2>
+                    <p>
+                        Current work is centred on tightening session flow, removing temporary test behaviour,
+                        and improving the UI feedback that supports short, repeatable runs.
+                    </p>
+                </aside>
+            </section>
+
+            <section class="content-section reveal" aria-labelledby="about-snap-tap">
+                <div class="section-heading">
+                    <p class="eyebrow">Overview</p>
+                    <h2 id="about-snap-tap">Designed for quick sessions and clean skill expression.</h2>
+                </div>
+                <div class="project-layout">
+                    <div class="content-stack">
+                        <p>
+                            Snap Tap is built around immediate readability and satisfying replayability. The aim is a mobile game
+                            that feels easy to pick up, quick to understand, and rewarding to improve at through sharper reactions
+                            and better consistency from run to run.
+                        </p>
+                        <p>
+                            The design direction stays intentionally lean. Rather than adding friction or unnecessary complexity,
+                            the focus is on making each session responsive, legible, and satisfying from the first tap through game over.
+                        </p>
+                    </div>
+
+                    <aside class="focus-card reveal" aria-labelledby="snap-tap-focus">
+                        <p class="panel-kicker">Current Focus</p>
+                        <h3 id="snap-tap-focus">What the team is working on now.</h3>
+                        <ul class="focus-list">
+                            <li>Removing temporary test functionality as core systems settle.</li>
+                            <li>Implementing a bottom timer bar UI to show remaining session time.</li>
+                            <li>Continuing gameplay polish and presentation improvements ahead of release.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="content-section reveal" aria-labelledby="snap-tap-progress">
+                <div class="section-heading">
+                    <p class="eyebrow">Development Progress</p>
+                    <h2 id="snap-tap-progress">A clear view of where Snap Tap stands today.</h2>
+                    <p>
+                        Snap Tap is currently in active development. Recent work has focused on stabilising the
+                        core gameplay loop, fixing target spawning behaviour, and making score feedback and end-of-run results read correctly.
+                    </p>
+                </div>
+
+                <div class="development-timeline" role="list" aria-label="Snap Tap development timeline">
+                    <article class="timeline-entry reveal" role="listitem">
+                        <div class="timeline-entry-header">
+                            <span class="timeline-marker" aria-hidden="true"></span>
+                            <div>
+                                <p class="timeline-stage">Stage 1</p>
+                                <h3>Project started</h3>
+                            </div>
+                            <span class="status-pill status-complete">Completed</span>
+                        </div>
+                        <p>The project entered development with a focus on short, responsive mobile play sessions.</p>
+                    </article>
+
+                    <article class="timeline-entry reveal" role="listitem">
+                        <div class="timeline-entry-header">
+                            <span class="timeline-marker" aria-hidden="true"></span>
+                            <div>
+                                <p class="timeline-stage">Stage 2</p>
+                                <h3>Core tap and reaction gameplay prototype</h3>
+                            </div>
+                            <span class="status-pill status-complete">Completed</span>
+                        </div>
+                        <p>The central tap-and-react loop has been established and is being refined through playtesting.</p>
+                    </article>
+
+                    <article class="timeline-entry reveal" role="listitem">
+                        <div class="timeline-entry-header">
+                            <span class="timeline-marker" aria-hidden="true"></span>
+                            <div>
+                                <p class="timeline-stage">Stage 3</p>
+                                <h3>Target spawning bug fixed</h3>
+                            </div>
+                            <span class="status-pill status-complete">Completed</span>
+                        </div>
+                        <p>A prefab issue caused by a missing target controller was identified and corrected, restoring proper spawning behaviour.</p>
+                    </article>
+
+                    <article class="timeline-entry reveal" role="listitem">
+                        <div class="timeline-entry-header">
+                            <span class="timeline-marker" aria-hidden="true"></span>
+                            <div>
+                                <p class="timeline-stage">Stage 4</p>
+                                <h3>Score system working during play</h3>
+                            </div>
+                            <span class="status-pill status-complete">Completed</span>
+                        </div>
+                        <p>Score tracking updates correctly during gameplay, giving each session immediate performance feedback.</p>
+                    </article>
+
+                    <article class="timeline-entry reveal" role="listitem">
+                        <div class="timeline-entry-header">
+                            <span class="timeline-marker" aria-hidden="true"></span>
+                            <div>
+                                <p class="timeline-stage">Stage 5</p>
+                                <h3>Game over score and best score display fixed</h3>
+                            </div>
+                            <span class="status-pill status-complete">Completed</span>
+                        </div>
+                        <p>The game over flow now presents final score and best score results correctly at the end of a run.</p>
+                    </article>
+
+                    <article class="timeline-entry reveal" role="listitem">
+                        <div class="timeline-entry-header">
+                            <span class="timeline-marker" aria-hidden="true"></span>
+                            <div>
+                                <p class="timeline-stage">Stage 6</p>
+                                <h3>Test-only controls being removed</h3>
+                            </div>
+                            <span class="status-pill status-progress">In Progress</span>
+                        </div>
+                        <p>Temporary controls and test game-over shortcuts are being stripped out as the gameplay flow becomes more reliable.</p>
+                    </article>
+
+                    <article class="timeline-entry reveal" role="listitem">
+                        <div class="timeline-entry-header">
+                            <span class="timeline-marker" aria-hidden="true"></span>
+                            <div>
+                                <p class="timeline-stage">Stage 7</p>
+                                <h3>Bottom timer bar UI</h3>
+                            </div>
+                            <span class="status-pill status-progress">In Progress</span>
+                        </div>
+                        <p>A timer bar is planned and underway to make remaining run time easier to read at a glance during play.</p>
+                    </article>
+
+                    <article class="timeline-entry reveal" role="listitem">
+                        <div class="timeline-entry-header">
+                            <span class="timeline-marker" aria-hidden="true"></span>
+                            <div>
+                                <p class="timeline-stage">Stage 8</p>
+                                <h3>Polishing and content updates ahead of release</h3>
+                            </div>
+                            <span class="status-pill status-planned">Planned</span>
+                        </div>
+                        <p>Further gameplay tuning, interface polish, and project-page updates will follow as development continues toward release.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section reveal" aria-labelledby="snap-tap-updates">
+                <div class="section-heading">
+                    <p class="eyebrow">Updates</p>
+                    <h2 id="snap-tap-updates">More development notes will follow.</h2>
+                </div>
+                <div class="updates-list updates-list-single">
+                    <article class="update-entry reveal">
+                        <p class="update-date">March 2026</p>
+                        <h3>Snap Tap added to the public games list</h3>
+                        <p>
+                            The project now has a dedicated page outlining its current direction, active development status,
+                            and the milestones shaping the path toward release.
+                        </p>
+                    </article>
+                </div>
+                <p class="back-link-wrap">
+                    <a class="text-link" href="games.html">Return to the full games index</a>
+                </p>
+                <p class="timeline-note">More updates coming soon as development continues.</p>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> Northreach Studios. Independent game development with a clear north star.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

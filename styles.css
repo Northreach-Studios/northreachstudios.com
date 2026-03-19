@@ -354,7 +354,10 @@ a {
 .featured-game-card,
 .game-card,
 .progress-card,
-.update-entry {
+.update-entry,
+.game-spotlight,
+.focus-card,
+.timeline-entry {
     backdrop-filter: blur(18px);
     background: linear-gradient(180deg, var(--surface-strong), var(--surface));
     border: 1px solid var(--line);
@@ -518,6 +521,20 @@ a {
     gap: 0.9rem;
 }
 
+.game-spotlight {
+    margin-top: 1.25rem;
+    padding: 1.5rem 1.6rem;
+    border-radius: var(--radius-md);
+}
+
+.game-spotlight h3,
+.focus-card h3,
+.timeline-entry h3 {
+    margin: 0;
+    color: var(--heading);
+    font-family: "Sora", "Segoe UI", sans-serif;
+}
+
 .games-grid {
     grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr);
 }
@@ -573,8 +590,32 @@ a {
     max-width: 72ch;
 }
 
+.project-layout {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr);
+    align-items: start;
+}
+
 .content-stack p {
     margin: 0;
+}
+
+.focus-card {
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+}
+
+.focus-list {
+    display: grid;
+    gap: 0.9rem;
+    margin: 1rem 0 0;
+    padding-left: 1.1rem;
+    color: var(--text-muted);
+}
+
+.focus-list li {
+    line-height: 1.7;
 }
 
 .progress-grid {
@@ -593,6 +634,11 @@ a {
 .update-entry {
     padding: 1.5rem;
     border-radius: var(--radius-md);
+}
+
+.updates-list-single {
+    grid-template-columns: 1fr;
+    max-width: 42rem;
 }
 
 .update-date {
@@ -654,6 +700,90 @@ a {
     letter-spacing: 0.12em;
 }
 
+.development-timeline {
+    position: relative;
+    display: grid;
+    gap: 1rem;
+}
+
+.timeline-entry {
+    position: relative;
+    padding: 1.35rem;
+    border-radius: var(--radius-md);
+}
+
+.timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: 1.9rem;
+    top: calc(100% + 0.2rem);
+    width: 1px;
+    height: 1rem;
+    background: rgba(39, 72, 98, 0.18);
+}
+
+.timeline-entry:last-child::before {
+    display: none;
+}
+
+.timeline-entry-header {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: start;
+}
+
+.timeline-entry-header .status-pill {
+    justify-self: start;
+    margin-left: 2rem;
+    margin-top: 0.35rem;
+}
+
+.timeline-marker {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: 0.4rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+    box-shadow: 0 0 0 0.3rem rgba(46, 141, 156, 0.12);
+}
+
+.timeline-stage {
+    margin: 0 0 0.35rem;
+    color: var(--accent-deep);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.timeline-entry p:last-child {
+    margin: 0.85rem 0 0 1.8rem;
+}
+
+.status-complete {
+    background: rgba(46, 141, 156, 0.14);
+    border-color: rgba(46, 141, 156, 0.24);
+    color: var(--accent-deep);
+}
+
+.status-progress {
+    background: rgba(38, 71, 104, 0.09);
+    border-color: rgba(38, 71, 104, 0.14);
+    color: var(--heading);
+}
+
+.status-planned {
+    background: rgba(84, 104, 123, 0.08);
+    border-color: rgba(84, 104, 123, 0.16);
+    color: var(--text);
+}
+
+.timeline-note {
+    margin: 1rem 0 0;
+    color: var(--text-muted);
+}
+
 .contact {
     display: flex;
     align-items: center;
@@ -702,6 +832,7 @@ a {
     .feature-grid,
     .timeline,
     .games-grid,
+    .project-layout,
     .progress-grid,
     .updates-list,
     .contact {
@@ -726,6 +857,14 @@ a {
     .featured-game-actions,
     .game-card-header {
         display: grid;
+    }
+
+    .timeline-entry-header {
+        grid-template-columns: auto minmax(0, 1fr);
+    }
+
+    .timeline-entry-header .status-pill {
+        margin-left: 1.8rem;
     }
 
     .contact {
@@ -780,6 +919,18 @@ a {
 
     .featured-game-actions {
         grid-template-columns: 1fr;
+    }
+
+    .timeline-entry {
+        padding: 1.2rem;
+    }
+
+    .timeline-entry::before {
+        left: 1.75rem;
+    }
+
+    .timeline-entry-header .status-pill {
+        margin-top: 0.6rem;
     }
 }
 
