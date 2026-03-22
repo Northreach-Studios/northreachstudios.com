@@ -1,0 +1,33 @@
+<svg width="900" height="1200" viewBox="0 0 900 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1200" rx="56" fill="url(#bg)"/>
+  <circle cx="668" cy="236" r="226" fill="url(#glow1)"/>
+  <circle cx="232" cy="994" r="268" fill="url(#glow2)"/>
+  <g>
+    <rect x="248" y="116" width="402" height="930" rx="74" transform="rotate(8 248 116)" fill="#0B1028" fill-opacity="0.94" stroke="#DCE5FF" stroke-opacity="0.28" stroke-width="12"/>
+    <rect x="390" y="172" width="112" height="18" rx="9" transform="rotate(8 390 172)" fill="#FFFFFF" fill-opacity="0.18"/>
+    <text x="340" y="356" transform="rotate(8 340 356)" fill="#FFFFFF" font-size="56" font-family="Arial, sans-serif" font-weight="700">Custom App</text>
+    <text x="340" y="420" transform="rotate(8 340 420)" fill="#D2D9FF" font-size="56" font-family="Arial, sans-serif" font-weight="700">Placeholder</text>
+    <rect x="326" y="500" width="234" height="70" rx="24" transform="rotate(8 326 500)" fill="#748AFF" fill-opacity="0.32"/>
+    <rect x="326" y="606" width="234" height="70" rx="24" transform="rotate(8 326 606)" fill="#8F6DFF" fill-opacity="0.28"/>
+    <rect x="326" y="712" width="234" height="70" rx="24" transform="rotate(8 326 712)" fill="#4FD4D5" fill-opacity="0.22"/>
+    <rect x="326" y="842" width="180" height="56" rx="28" transform="rotate(8 326 842)" fill="#FFFFFF" fill-opacity="0.14"/>
+  </g>
+  <text x="88" y="168" fill="#FFFFFF" font-size="58" font-family="Arial, sans-serif" font-weight="700">Custom App Artwork</text>
+  <text x="88" y="222" fill="#C7D0FF" font-size="26" font-family="Arial, sans-serif">Suggested final asset path:</text>
+  <text x="88" y="266" fill="#FFFFFF" font-size="34" font-family="Arial, sans-serif" font-weight="700">/assets/images/custom-app-phone.png</text>
+  <defs>
+    <linearGradient id="bg" x1="54" y1="42" x2="846" y2="1158" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2A2E7B"/>
+      <stop offset="0.52" stop-color="#171D58"/>
+      <stop offset="1" stop-color="#081028"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(668 236) rotate(90) scale(226)">
+      <stop stop-color="#8B72FF" stop-opacity="0.78"/>
+      <stop offset="1" stop-color="#8B72FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(232 994) rotate(90) scale(268)">
+      <stop stop-color="#4FD4D5" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#4FD4D5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
