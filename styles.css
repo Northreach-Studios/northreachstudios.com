@@ -436,6 +436,8 @@ a {
 .feature-grid,
 .timeline,
 .games-grid,
+.overview-grid,
+.service-grid,
 .progress-grid,
 .updates-list {
     display: grid;
@@ -451,6 +453,14 @@ a {
 .games-index .section-heading,
 .content-section .section-heading {
     margin-bottom: 1.5rem;
+}
+
+.overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .featured-game-card {
@@ -525,6 +535,33 @@ a {
     margin-top: 1.25rem;
     padding: 1.5rem 1.6rem;
     border-radius: var(--radius-md);
+}
+
+.overview-card,
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.75rem;
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(18px);
+    background: linear-gradient(180deg, var(--surface-strong), var(--surface));
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+}
+
+.overview-card h3,
+.service-card h3 {
+    margin: 0;
+    color: var(--heading);
+    font-family: "Sora", "Segoe UI", sans-serif;
+}
+
+.overview-card p,
+.service-card p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.7;
 }
 
 .game-spotlight h3,
@@ -832,6 +869,8 @@ a {
     .feature-grid,
     .timeline,
     .games-grid,
+    .overview-grid,
+    .service-grid,
     .project-layout,
     .progress-grid,
     .updates-list,
@@ -957,6 +996,8 @@ a {
     .page-hero-panel,
     .panel,
     .feature-card,
+    .overview-card,
+    .service-card,
     .timeline-item,
     .contact,
     .featured-game-card,
