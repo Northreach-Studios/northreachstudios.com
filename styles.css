@@ -32,6 +32,18 @@ a {
   text-decoration: none;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .skip-link {
   position: absolute;
   left: 1rem;
@@ -80,6 +92,14 @@ select:focus-visible,
 textarea:focus-visible {
   outline: 3px solid #93c5fd;
   outline-offset: 3px;
+}
+
+@media (max-width: 767px) {
+  .nav-menu[data-open="true"] {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 ::-webkit-scrollbar {
