@@ -3,506 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Northreach Studios | Accessibility-First Mobile Development</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+      name="description"
+      content="Northreach Studios is an independent game studio developing atmospheric RPG experiences."
+    />
+    <title>Northreach Studios | Indie RPG Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="selection:bg-blue-500/30">
+  <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 glass border-b border-white/5">
-      <div
-        class="max-w-7xl mx-auto px-5 md:px-6 py-4 flex items-center justify-between gap-4"
-      >
-        <div class="flex items-center space-x-3">
-          <div
-            class="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-white shadow-lg shadow-blue-600/20"
-            aria-hidden="true"
-          >
-            N
-          </div>
-          <span class="text-xl font-extrabold tracking-tight"
-            >NORTHREACH STUDIOS</span
-          >
-        </div>
+
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Northreach Studios home">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-copy">
+            <span class="brand-name">Northreach</span>
+            <span class="brand-subtitle">Studios</span>
+          </span>
+        </a>
+
         <button
           type="button"
-          class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl border border-white/10 text-white"
+          class="nav-toggle"
           aria-expanded="false"
           aria-controls="primary-navigation"
           aria-label="Toggle navigation"
           data-nav-toggle
         >
-          <span class="sr-only">Toggle navigation</span>
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 7h16M4 12h16M4 17h16"
-            ></path>
-          </svg>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div
-          id="primary-navigation"
-          class="nav-menu hidden md:flex md:items-center md:gap-6 absolute md:static top-full left-5 right-5 mt-3 md:mt-0 p-4 md:p-0 rounded-3xl md:rounded-none glass md:bg-transparent md:border-0"
-          data-nav-menu
-        >
-          <div class="flex flex-col md:flex-row gap-3 md:gap-6 text-sm font-medium text-gray-300">
-            <a href="#services" class="hover:text-blue-400 transition"
-              >Services</a
-            >
-            <a href="#accessibility" class="hover:text-blue-400 transition"
-              >Accessibility</a
-            >
-            <a href="#custom" class="hover:text-blue-400 transition"
-              >Custom Build</a
-            >
-          </div>
-          <a
-            href="#contact"
-            class="mt-4 md:mt-0 md:ml-2 inline-flex justify-center bg-blue-600 hover:bg-blue-700 px-6 py-2.5 rounded-full text-sm font-semibold transition shadow-lg shadow-blue-600/20"
-          >
-            Start a Project
-          </a>
+
+        <div id="primary-navigation" class="nav-menu" data-nav-menu>
+          <a href="#vision">Vision</a>
+          <a href="#craft">Craft</a>
+          <a href="#status">Status</a>
+          <a href="#contact" class="nav-action">Contact</a>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <main id="main-content">
-      <!-- Hero Section -->
-      <section class="pt-32 md:pt-32 pb-20 px-5 md:px-6 relative overflow-hidden">
-      <!-- Subtle Glow -->
-      <div
-        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent -z-10"
-        aria-hidden="true"
-      ></div>
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-art"
+          src="assets/northreach-rpg-hero.png"
+          alt="A moody northern fantasy landscape with mountains, pine forests, ancient ruins, and a campfire at dusk."
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
 
-      <div class="max-w-7xl mx-auto text-center">
-        <div
-          class="inline-block px-4 py-1.5 mb-6 border border-blue-400/20 rounded-full bg-blue-500/5 text-blue-400 text-xs font-bold uppercase tracking-widest"
-        >
-          iOS • Android • Games • Custom
+        <div class="hero-content">
+          <p class="eyebrow">Independent RPG studio</p>
+          <h1 id="hero-title">
+            <span>Worlds</span>
+            <span>worth</span>
+            <span>travelling</span>
+            <span>through.</span>
+          </h1>
+          <p class="hero-copy">
+            Northreach Studios is shifting from mobile apps into indie RPG
+            development, with a focus on atmospheric worlds, purposeful systems,
+            and stories that reward curiosity.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#vision">Enter the Reach</a>
+            <a class="button secondary" href="#contact">Follow the Journey</a>
+          </div>
         </div>
-        <h1
-          class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tighter leading-[1.05]"
-        >
-          Welcome to <br />
-          <span class="gradient-text">Northreach Studios</span>
-        </h1>
-        <p
-          class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed"
-        >
-          We develop high-performance mobile applications and immersive games
-          with an uncompromising focus on accessibility and user-first design.
-        </p>
-        <div
-          class="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <a
-            href="#services"
-            class="w-full sm:w-auto bg-white text-gray-900 px-10 py-4 rounded-2xl font-bold hover:bg-gray-100 transition shadow-xl"
-          >
-            Our Portfolio
-          </a>
-          <a
-            href="#accessibility"
-            class="w-full sm:w-auto glass px-10 py-4 rounded-2xl font-bold hover:bg-white/5 transition"
-          >
-            Our Philosophy
-          </a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Services Bento Grid -->
-    <section id="services" class="py-16 px-5 md:px-6 bg-gray-900/40">
-      <div class="max-w-7xl mx-auto">
-        <div class="max-w-xl mb-10">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
-          <p class="text-gray-400 text-lg">
-            Digital solutions built to scale and designed to include everyone.
+      <section id="vision" class="section intro-section">
+        <div class="section-heading">
+          <p class="eyebrow">The new path</p>
+          <h2>From utility to adventure.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            Northreach Studios is now a home for indie role-playing games:
+            crafted settings, memorable quests, tactical choices, and systems
+            that give players reasons to explore.
+          </p>
+          <p>
+            The studio is early in this new chapter. This site now reflects
+            that direction: less software agency, more campfire, map table, and
+            long road into the unknown.
           </p>
         </div>
+      </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-          <!-- Mobile Apps -->
-          <div
-            class="bento-card p-8 md:p-10 rounded-[2.5rem] flex flex-col min-h-[320px]"
-          >
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 shrink-0"
-              >
-                <svg
-                  class="w-7 h-7 text-blue-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  ></path>
-                </svg>
-              </div>
-              <h3 class="text-3xl font-bold">Native & Hybrid Apps</h3>
-            </div>
-            <div class="md:mt-0 mt-auto">
-              <p class="text-gray-400 text-lg leading-relaxed">
-                Bespoke mobile development for iOS and Android. We focus on
-                seamless interactions and robust performance, ensuring your
-                vision works flawlessly on every device.
-              </p>
-            </div>
-          </div>
-
-          <!-- Games -->
-          <div
-            class="bento-card p-8 md:p-10 rounded-[2.5rem] flex flex-col min-h-[320px] bg-gradient-to-br from-indigo-500/5 to-transparent"
-          >
-            <div class="flex items-center gap-4 mb-4">
-              <div
-                class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center border border-purple-500/20 shrink-0"
-              >
-                <svg
-                  class="w-7 h-7 text-purple-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-                  ></path>
-                </svg>
-              </div>
-              <h3 class="text-3xl font-bold">Mobile Gaming</h3>
-            </div>
-            <div class="md:mt-0 mt-auto">
-              <p class="text-gray-400 text-lg leading-relaxed">
-                Engaging mechanics meet accessibility. We build games that are
-                fun to play and easy to navigate, breaking barriers in the
-                mobile gaming space.
-              </p>
-            </div>
-          </div>
+      <section id="craft" class="section craft-section" aria-labelledby="craft-title">
+        <div class="section-heading">
+          <p class="eyebrow">Design pillars</p>
+          <h2 id="craft-title">RPGs with texture, consequence, and heart.</h2>
         </div>
 
-        <!-- Custom Requests -->
-        <div
-          id="custom"
-          class="bento-card p-8 md:p-10 rounded-[2.5rem] border-blue-500/20 flex flex-col md:flex-row items-center gap-8 md:gap-10"
-        >
-          <div class="flex-1 text-center md:text-left">
-            <span
-              class="text-blue-400 font-bold text-sm uppercase tracking-widest mb-2 block"
-              >Custom Solutions</span
-            >
-            <h3 class="text-3xl md:text-4xl font-bold mb-4">
-              Have a unique idea?
-            </h3>
-            <p class="text-gray-400 text-lg mb-6 max-w-2xl">
-              We specialize in turning complex requirements into elegant mobile
-              solutions. From specialized enterprise tools to innovative niche
-              concepts, we take on custom builds of any scale.
+        <div class="pillar-grid">
+          <article class="pillar-card">
+            <span class="card-number">01</span>
+            <h3>Explorable Worlds</h3>
+            <p>
+              Dense regions with landmarks, secrets, readable geography, and a
+              sense that every path was placed with intent.
             </p>
-            <a
-              href="#contact"
-              class="inline-flex bg-blue-600 px-8 py-4 rounded-xl font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-600/20"
-            >
-              Submit Your Concept
-            </a>
-          </div>
-          <div class="w-full md:w-1/3 grid grid-cols-2 gap-4">
-            <div
-              class="h-28 glass rounded-3xl flex items-center justify-center text-xs font-bold text-gray-400 text-center px-4 uppercase tracking-tighter"
-            >
-              Bespoke UI
-            </div>
-            <div
-              class="h-28 glass rounded-3xl flex items-center justify-center text-xs font-bold text-gray-400 text-center px-4 uppercase tracking-tighter"
-            >
-              Third-Party API
-            </div>
-            <div
-              class="h-28 glass rounded-3xl flex items-center justify-center text-xs font-bold text-gray-400 text-center px-4 uppercase tracking-tighter"
-            >
-              Cloud Logic
-            </div>
-            <div
-              class="h-28 glass rounded-3xl flex items-center justify-center text-xs font-bold text-gray-400 text-center px-4 uppercase tracking-tighter"
-            >
-              Scalability
-            </div>
-          </div>
+          </article>
+          <article class="pillar-card">
+            <span class="card-number">02</span>
+            <h3>Player-Led Stories</h3>
+            <p>
+              Quests built around choice, discovery, and consequences that feel
+              grounded rather than decorative.
+            </p>
+          </article>
+          <article class="pillar-card">
+            <span class="card-number">03</span>
+            <h3>Readable Systems</h3>
+            <p>
+              Progression, combat, inventory, and dialogue systems designed to
+              be deep without becoming hostile to the player.
+            </p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Accessibility Showcase -->
-    <section id="accessibility" class="py-20 px-5 md:px-6">
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10 md:gap-14">
-        <div>
-          <span
-            class="text-blue-500 font-bold uppercase tracking-widest text-sm mb-3 block"
-            >Our North Star</span
-          >
-          <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Accessibility by Design.
-          </h2>
-          <div class="space-y-6">
-            <div class="flex items-start space-x-5">
-              <div
-                class="mt-1 bg-green-500/10 p-2 rounded-lg border border-green-500/20"
-              >
-                <svg
-                  class="w-5 h-5 text-green-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-bold text-xl mb-2">WCAG AA Standard</h4>
-                <p class="text-gray-400 leading-relaxed">
-                  We develop every project to meet high accessibility standards,
-                  ensuring no user is left behind.
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start space-x-5">
-              <div
-                class="mt-1 bg-green-500/10 p-2 rounded-lg border border-green-500/20"
-              >
-                <svg
-                  class="w-5 h-5 text-green-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="3"
-                    d="M5 13l4 4L19 7"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-bold text-xl mb-2">
-                  Voice & Touch Optimization
-                </h4>
-                <p class="text-gray-400 leading-relaxed">
-                  Semantic code and optimized targets make navigation effortless
-                  for assistive technologies.
-                </p>
-              </div>
-            </div>
+      <section id="status" class="section status-section" aria-labelledby="status-title">
+        <div class="status-panel">
+          <div>
+            <p class="eyebrow">Current status</p>
+            <h2 id="status-title">The first RPG project is taking shape.</h2>
+          </div>
+          <div class="status-copy">
+            <p>
+              Public details will come when there is something solid to show.
+              For now, Northreach Studios is focused on prototyping core RPG
+              systems, defining the setting, and building a foundation for a
+              long-term indie game roadmap.
+            </p>
+            <ul class="status-list" aria-label="Current development priorities">
+              <li>World and lore development</li>
+              <li>Quest and exploration prototypes</li>
+              <li>Core RPG mechanics</li>
+              <li>Accessible player experience</li>
+            </ul>
           </div>
         </div>
-        <div class="relative flex justify-center">
-          <div
-            class="absolute inset-x-12 inset-y-10 bg-blue-600/10 rounded-full blur-[80px]"
-          ></div>
-          <div class="relative glass p-3 md:p-4 rounded-[2.5rem] shadow-2xl max-w-[220px] md:max-w-[260px]">
-            <div
-              class="bg-gray-950 w-full h-full rounded-[2rem] p-6 md:p-7 aspect-[9/16] flex flex-col items-center justify-center text-center"
-            >
-              <div
-                class="w-16 h-16 bg-blue-600/20 rounded-full mb-6 flex items-center justify-center border border-blue-500/30"
-              >
-                <svg
-                  class="w-8 h-8 text-blue-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
-                  ></path>
-                </svg>
-              </div>
-              <h4 class="text-2xl font-bold mb-3">Perceivable</h4>
-              <p class="text-gray-500 text-base leading-relaxed">
-                Information and user interface components must be presentable to
-                users in ways they can perceive.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+      </section>
     </main>
 
-    <!-- Footer / Contact -->
-    <footer
-      id="contact"
-      class="py-16 px-5 md:px-6 border-t border-white/5 bg-gray-900/50"
-    >
-      <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-10 md:gap-14 mb-12">
-          <div>
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Let's build the <br />future together.
-            </h2>
-            <p class="text-gray-400 text-lg mb-8 leading-relaxed max-w-md">
-              Ready to start your next mobile venture? Our development team is
-              ready to turn your ideas into a polished, accessible reality.
-            </p>
-            <div class="flex flex-wrap gap-4">
-              <a
-                href="mailto:support@northreachstudios.com"
-                class="inline-flex items-center gap-3 glass rounded-2xl px-4 py-3 hover:border-blue-500 transition"
-              >
-                <svg
-                  class="w-6 h-6 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.8"
-                    d="M3 7.5A2.5 2.5 0 015.5 5h13A2.5 2.5 0 0121 7.5v9a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 16.5v-9zm1.4-.8L12 12l7.6-5.3"
-                  />
-                </svg>
-                <span>Email Us</span>
-              </a>
-            </div>
-          </div>
-          <div
-            id="contact-form"
-            class="glass p-7 md:p-9 rounded-[2.5rem] border-white/10"
-          >
-            <form data-proposal-form class="space-y-6">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    for="name"
-                    class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1"
-                    >Your Name</label
-                  >
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    autocomplete="name"
-                    placeholder="Jane Doe"
-                    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-blue-500 transition"
-                  />
-                </div>
-                <div>
-                  <label
-                    for="email"
-                    class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1"
-                    >Email Address</label
-                  >
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autocomplete="email"
-                    placeholder="jane@company.com"
-                    class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-blue-500 transition"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  for="project-type"
-                  class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1"
-                  >Project Type</label
-                >
-                <select
-                  id="project-type"
-                  name="project_type"
-                  class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-blue-500 transition text-gray-400 appearance-none"
-                >
-                  <option>Mobile App (iOS/Android)</option>
-                  <option>Mobile Game</option>
-                  <option>Custom Build Request</option>
-                </select>
-              </div>
-              <div>
-                <label
-                  for="message"
-                  class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 ml-1"
-                  >Message</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Describe your project goals..."
-                  rows="5"
-                  class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-blue-500 transition"
-                ></textarea>
-              </div>
-              <button
-                class="w-full bg-blue-600 py-5 rounded-xl font-bold hover:bg-blue-500 transition shadow-xl shadow-blue-600/20"
-              >
-                Send Proposal Request
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 text-gray-500 text-sm"
-        >
+    <footer id="contact" class="footer">
+      <div class="footer-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Reach the studio.</h2>
           <p>
-            © 2026 Northreach Studios. All digital experiences should be
-            accessible.
+            For collaboration, press, community, or general enquiries, contact
+            Northreach Studios by email.
           </p>
-          <div class="flex space-x-8 mt-6 md:mt-0">
-            <a href="#" class="hover:text-white transition">Privacy Policy</a>
-            <a href="#" class="hover:text-white transition"
-              >Accessibility Statement</a
-            >
-          </div>
         </div>
+        <a class="button primary" href="mailto:support@northreachstudios.com">
+          support@northreachstudios.com
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Northreach Studios. Independent RPG game development.</p>
+        <a href="#top">Back to top</a>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
