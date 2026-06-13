@@ -660,24 +660,17 @@ button:focus-visible {
   .hero {
     min-height: auto;
     padding-top: 7.5rem;
-    padding-bottom: 19rem;
+    padding-bottom: 4rem;
   }
 
   .hero-art {
-    top: auto;
-    right: 1rem;
-    bottom: 3rem;
-    left: 1rem;
-    width: auto;
-    height: 14rem;
-    opacity: 0.9;
-    object-position: center;
+    display: none;
   }
 
   .hero-shade {
     background:
-      linear-gradient(180deg, rgba(250, 244, 232, 0.98) 0%, rgba(250, 244, 232, 0.98) 55%, rgba(250, 244, 232, 0.18) 76%, var(--bg) 100%),
-      linear-gradient(90deg, rgba(250, 244, 232, 0.6), rgba(250, 244, 232, 0.2));
+      radial-gradient(circle at 88% 20%, rgba(143, 183, 201, 0.28), transparent 12rem),
+      linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
   }
 
   .hero-content {
